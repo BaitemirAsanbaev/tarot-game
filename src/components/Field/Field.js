@@ -29,18 +29,24 @@ const Field = ({ data, enemyCards }) => {
     card4 = <img className={classes.field_card} src={data[3].image} alt="4" />
   }
 
-  return (<div>
-    <div>
-      {e1}
-      {e2}
-      {e3}
-      {e4}
+  return (<div className={classes.Field}>
+    <div className={classes.enemyField}>
+      <div></div>
+      <div className={classes.enemyCards}>
+        {e1}
+        {e2}
+        {e3}
+        {e4}
+      </div>
     </div>
-    <div>
-      {card1}
-      {card2}
-      {card3}
-      {card4}
+    <div className={classes.allayField}>
+      <div></div>
+      <div className={classes.allayCards}>
+        {card1}
+        {card2}
+        {card3}
+        {card4}
+      </div>
     </div>
   </div>);
 }
