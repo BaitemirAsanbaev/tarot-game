@@ -10,12 +10,25 @@ const Game = () => {
   const [gameOver, setGameOver] = useState(false);
   const [win, setWin] = useState(false);
   const [enemyHP, setEnemyHP] = useState(10);
+  const [randomDigit1, setRandomDigit1] = useState(0);
+  const [randomDigit2, setRandomDigit2] = useState(0);
+  const [randomDigit3, setRandomDigit3] = useState(0);
+  const [randomDigit4, setRandomDigit4] = useState(0);
 
-  let card_digit_1 = Math.round(Math.random() * 21);
-  let card_digit_2 = Math.round(Math.random() * 21);
-  let card_digit_3 = Math.round(Math.random() * 21);
-  let card_digit_4 = Math.round(Math.random() * 21);
 
+
+
+  let card_digit_1= randomDigit1;
+  let card_digit_3= randomDigit2;
+  let card_digit_2= randomDigit3;
+  let card_digit_4= randomDigit4;
+
+  useEffect(() => {
+    setRandomDigit1( Math.round(Math.random() * 22));
+    setRandomDigit2( Math.round(Math.random() * 22));
+    setRandomDigit3( Math.round(Math.random() * 22));
+    setRandomDigit4( Math.round(Math.random() * 22));
+  },[])
   let atackButton;
 
   function atack() {
@@ -26,7 +39,8 @@ const Game = () => {
     console.log(enemyHP);
     setEnemyHP(enemyHP - damage);
   }
-  useEffect(()=>{
+  useEffect(() => {
+
     console.log(enemyHP);
     if (enemyHP <= 0) {
       setWin(true)

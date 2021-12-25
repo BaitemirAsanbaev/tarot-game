@@ -1,3 +1,4 @@
+import back from "./assets/images/back.svg"
 import fool from "./assets/images/fool.svg"
 import magician from "./assets/images/magician.svg"
 import priestress from "./assets/images/high-priestess.svg"
@@ -22,6 +23,12 @@ import judgement from "./assets/images/judgment.svg"
 import world from "./assets/images/world.svg"
 
 export const cards = [
+  {
+    title: "back",
+    image : back,
+    damage: 0,
+    hp: 0,
+  },
   {
     title: "fool",
     image: fool,
