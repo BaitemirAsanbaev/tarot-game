@@ -7,10 +7,10 @@ const Field = ({ data }) => {
   let card3;
   let card4;
 
-  let card1_data;
-  let card2_data;
-  let card3_data;
-  let card4_data;
+  // let card1_data;
+  // let card2_data;
+  // let card3_data;
+  // let card4_data;
 
   // card2 = <img src={data[1].image} alt="2" />
   // card3 = <img src={data[2].image} alt="3" />
@@ -26,16 +26,16 @@ const Field = ({ data }) => {
   if (data.length >= 3) {
     card3 = <img className={classes.field_card} src={data[2].image} alt="3" />
   }
-  if (data.length == 4) {
+  if (data.length === 4) {
     card4 = <img className={classes.field_card} src={data[3].image} alt="4" />
   }
 
-  if (data.length == 4) {
-    card1_data = data[0]
-    card2_data = data[1]
-    card3_data = data[2]
-    card4_data = data[3]
-  }
+  // if (data.length === 4) {
+  //   card1_data = data[0]
+  //   card2_data = data[1]
+  //   card3_data = data[2]
+  //   card4_data = data[3]
+  // }
 
 
     return (<div>
