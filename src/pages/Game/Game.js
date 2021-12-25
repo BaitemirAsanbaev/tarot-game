@@ -33,7 +33,8 @@ const Game = () => {
       setGameOver(true)
       console.log(win, gameOver);
     }
-  }, [enemyHP])
+  }, [enemyHP, win, gameOver])
+
   if (inGameCards.length === 4) {
     atackButton = <div className={classes.atack} onClick={() => {
       atack()
