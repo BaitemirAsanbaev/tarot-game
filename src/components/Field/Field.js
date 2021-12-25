@@ -1,21 +1,20 @@
+import { cards } from "../../cards";
 import classes from "./Field.module.css"
 
-const Field = ({ data }) => {
-  // console.log(data);
+const Field = ({ data, enemyCards }) => {
+
+
   let card1;
   let card2;
   let card3;
   let card4;
 
-  // let card1_data;
-  // let card2_data;
-  // let card3_data;
-  // let card4_data;
+  console.log();
 
-  // card2 = <img src={data[1].image} alt="2" />
-  // card3 = <img src={data[2].image} alt="3" />
-  // card4 = <img src={data[3].image} alt="4" />
-
+  const e1 = <img className={classes.field_card} src={cards[enemyCards[0]].image} alt="e1" />
+  const e2 = <img className={classes.field_card} src={cards[enemyCards[1]].image} alt="e2" />
+  const e3 = <img className={classes.field_card} src={cards[enemyCards[2]].image} alt="e3" />
+  const e4 = <img className={classes.field_card} src={cards[enemyCards[3]].image} alt="e4" />
 
   if (data.length >= 1) {
     card1 = <img className={classes.field_card} src={data[0].image} alt="1" />
@@ -30,20 +29,20 @@ const Field = ({ data }) => {
     card4 = <img className={classes.field_card} src={data[3].image} alt="4" />
   }
 
-  // if (data.length === 4) {
-  //   card1_data = data[0]
-  //   card2_data = data[1]
-  //   card3_data = data[2]
-  //   card4_data = data[3]
-  // }
-
-
-    return (<div>
+  return (<div>
+    <div>
+      {e1}
+      {e2}
+      {e3}
+      {e4}
+    </div>
+    <div>
       {card1}
       {card2}
       {card3}
       {card4}
-    </div>);
-  }
+    </div>
+  </div>);
+}
 
-  export default Field;
+export default Field;
