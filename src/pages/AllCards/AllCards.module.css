@@ -1,0 +1,4 @@
+.AllCards{
+  display: flex;
+  flex-wrap: wrap;
+}

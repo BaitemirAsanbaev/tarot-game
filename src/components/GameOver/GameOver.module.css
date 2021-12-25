@@ -1,0 +1,6 @@
+.GameOver{
+  position: relative;
+  z-index: 3;
+  font-size: 144px;
+  color: #fff;
+}

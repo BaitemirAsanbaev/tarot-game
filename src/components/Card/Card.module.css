@@ -1,0 +1,16 @@
+.Card{
+  height: 225px;
+  width: 150px;
+  background-repeat: no-repeat;
+  border: 2px solid transparent;
+}
+.NoCard{
+  border-radius: 7px;
+  border: 2px solid #B4A34E ;
+  background-color: blanchedalmond;
+}
+.CardDiv{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
