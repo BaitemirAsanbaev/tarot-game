@@ -1,4 +1,27 @@
 .AllCards{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  padding: 20px;
+}
+.guide_card{
+  margin: 10px;
+}
+.AllCards h1{
+  font-size: 72px;
+  
+}
+.AllCards h2{
+  color: #fff;
+}
+.card_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards_div{
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }

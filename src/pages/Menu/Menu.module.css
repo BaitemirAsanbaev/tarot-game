@@ -1,3 +1,8 @@
+.Menu{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 .Menu a{
   display: flex;
   justify-content: center;
