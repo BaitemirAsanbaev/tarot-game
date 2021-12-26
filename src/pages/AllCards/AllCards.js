@@ -7,7 +7,7 @@ const AllCards = () => {
   const output = newCards.map((item) => {
     return (
       <div key={item.title}>
-        <img className={classes.guide_card} src={item.image} />
+        <img alt="card" className={classes.guide_card} src={item.image} />
         <div className={classes.card_text}>
           <h2>{item.title.toUpperCase()}</h2>
           <p>{item.description}</p>
