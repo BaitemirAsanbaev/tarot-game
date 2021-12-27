@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { cards } from "../../cards";
 import Field from "../../components/Field/Field";
 import GameOver from "../../components/GameOver/GameOver";
 import Hand from "../../components/Hand/Hand";
@@ -35,19 +36,30 @@ const Game = () => {
     setRandomEnemyDigit2( Math.round(Math.random() * 21 + 1));
     setRandomEnemyDigit3( Math.round(Math.random() * 21 + 1));
     setRandomEnemyDigit4( Math.round(Math.random() * 21 + 1));
+
+
+  
   },[])
   let atackButton;
+  let hp = 0;
 
   function atack() {
+    enemy_cards.forEach((item)=>{
+      hp += cards[item].hp;
+    })
     let damage = 0;
+
     inGameCards.forEach((item) => {
       damage += item.damage;
     })
-    console.log(enemyHP);
-    setEnemyHP(enemyHP - damage);
-  }
-  useEffect(() => {
 
+    setEnemyHP(enemyHP + hp - damage);
+    hp -= damage;
+    
+    console.log(enemyHP);
+  }
+
+  useEffect(() => {
     console.log(enemyHP);
     if (enemyHP <= 0) {
       setWin(true)
@@ -56,21 +68,25 @@ const Game = () => {
     }
   }, [enemyHP, win, gameOver])
 
+
   if (inGameCards.length === 4) {
     atackButton = <div className={classes.atack} onClick={() => {
       atack()
     }}>Atack</div>
   }
 
+
   return (<>
 
     <div className={classes.Background}></div>
     {gameOver ? <GameOver win={win} />
+    
       :
       <div className={classes.Game}>
         <Field data={inGameCards} enemyCards={enemy_cards} />
         <Hand cd1={randomDigit1} cd2={randomDigit2} cd3={randomDigit3} cd4={randomDigit4} in_cards={inGameCards} put={setInGameCards} />
         {atackButton}
+        
       </div>}
 
   </>);

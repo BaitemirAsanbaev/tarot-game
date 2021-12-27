@@ -1,0 +1,17 @@
+.Button{
+  
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  width: 300px;
+  text-decoration: none;
+  color: #B4A34E;
+  background-color: #363636;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 15px;
+}
+.Button:hover{
+  
+  background-color: #242424;
+}

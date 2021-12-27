@@ -1,5 +1,6 @@
 import classes from "./AllCards.module.css"
 import { cards } from '../../cards';
+import Button from "../../components/Button/Button";
 
 const AllCards = () => {
   const newCards = [...cards];
@@ -20,6 +21,7 @@ const AllCards = () => {
     <div className={classes.cards_div}>
       {output}
     </div>
+    <Button url="/">Back</Button>
   </div>);
 }
 

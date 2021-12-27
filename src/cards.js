@@ -30,136 +30,158 @@ export const cards = [
     hp: 0,
   },
   {
-    title: "fool",
+    title: "  fool",
+    description:"",
     image: fool,
     damage: 2,
     hp: 2
   },
   {
     title: "magician",
+    description:"",
     image: magician,
-    damage: 2,
-    hp: 2
+    damage: 4,
+    hp: 1
   },
   {
     title: "priestress",
+    description:"",
     image: priestress,
-    damage: 2,
+    damage: 1,
     hp: 2
   },
   {
     title: "empress",
+    description:"",
     image: empress,
     damage: 2,
-    hp: 2
+    hp: 3
   },
   {
     title: "emperor",
+    description:"",
     image: emperor,
-    damage: 2,
+    damage: 3,
     hp: 2
   },
   {
     title: "hierophant",
+    description:"",
     image: hierophant,
-    damage: 2,
-    hp: 2
+    damage: 1,
+    hp: 3
   },
   {
     title: "lovers",
+    description:"",
     image: lovers,
-    damage: 2,
-    hp: 2
+    damage: 1,
+    hp: 4
   },
   {
     title: "chariot",
+    description:"",
     image: chariot,
-    damage: 2,
+    damage: 3,
     hp: 2
   },
   {
     title: "strength",
+    description:"",
     image: strength,
-    damage: 2,
+    damage: 4,
     hp: 2
   },
   {
     title: "hermit",
+    description:"",
     image: hermit,
-    damage: 2,
-    hp: 2
+    damage: 1,
+    hp: 3
   },
   {
     title: "fortune",
+    description:"",
     image: fortune,
     damage: 2,
     hp: 2
   },
   {
     title: "justice",
+    description:"",
     image: justice,
-    damage: 2,
+    damage: 3,
     hp: 2
   },
   {
     title: "hanged",
+    description:"",
     image: hanged,
-    damage: 2,
-    hp: 2
+    damage: 3,
+    hp: 1
   },
   {
     title: "death",
+    description:"",
     image: death,
-    damage: 2,
-    hp: 2
+    damage: 1,
+    hp: 1
   },
   {
     title: "temperance",
+    description:"",
     image: temperance,
-    damage: 2,
-    hp: 2
+    damage: 1,
+    hp: 1
   },
   {
     title: "devil",
+    description:"",
     image: devil,
-    damage: 2,
+    damage: 3,
     hp: 2
   },
   {
     title: "tower",
+    description:"",
     image: tower,
-    damage: 2,
-    hp: 2
+    damage: 0,
+    hp: 6
   },
   {
     title: "star",
+    description:"",
     image: star,
-    damage: 2,
-    hp: 2
+    damage: 3,
+    hp: 3
   },
   {
     title: "moon",
+    description:"",
     image: moon,
     damage: 2,
-    hp: 2
+    hp: 4
   },
   {
     title: "sun",
+    description:"",
     image: sun,
     damage: 2,
-    hp: 2
+    hp: 4
   },
   {
     title: "judgement",
+    description:"",
     image: judgement,
-    damage: 2,
-    hp: 2
+    damage: 4,
+    hp: 1
   },
   {
     title: "world",
+    description:"",
     image: world,
-    damage: 2,
-    hp: 2
+    damage: 3,
+    hp: 4
   },
 ]
 

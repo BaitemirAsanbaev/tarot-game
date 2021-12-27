@@ -1,6 +1,10 @@
 .GameOver{
   position: relative;
+  top: 100px;
   z-index: 3;
   font-size: 144px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

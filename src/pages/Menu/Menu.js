@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+
+import Button from "../../components/Button/Button";
 import classes from "./Menu.module.css"
 
 const Menu = () => {
   return ( <div className={classes.Menu}>
-    <Link to="/battle">Battle</Link>
+    <Button url="/battle">Battle</Button>
+    <Button url="/">Back</Button>
   </div> );
 }
  
