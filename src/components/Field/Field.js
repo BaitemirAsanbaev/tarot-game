@@ -1,9 +1,9 @@
 import { cards } from "../../cards";
 import classes from "./Field.module.css"
 
-const Field = ({ data, enemyCards }) => {
+const Field = ({ data, enemyCards, enemyHP }) => {
 
-
+  let width = enemyHP * 100
   let card1;
   let card2;
   let card3;
@@ -30,6 +30,7 @@ const Field = ({ data, enemyCards }) => {
   }
 
   return (<div className={classes.Field}>
+    <div style={{width: `${width}px`, height: "20px", backgroundColor: "green", display: "flex", justifyContent: "center", color: "#fff"}}>{enemyHP}</div>
     <div className={classes.enemyField}>
       <div></div>
       <div className={classes.enemyCards}>

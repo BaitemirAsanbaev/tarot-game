@@ -1,6 +1,11 @@
 .allayCards{
-  height: 150px;
+  display: flex;
+  justify-content:center;
 }
 .field_card{
   margin: 10px;
+}
+.enemyCards{
+  display: flex;
+  justify-content:center;
 }
