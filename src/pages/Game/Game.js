@@ -43,7 +43,7 @@ const Game = () => {
 
   useEffect(()=>{
     setInGameNewCards(inGameCards)
-  }, [inGameNewCards])
+  }, [inGameNewCards, inGameCards])
 
   useEffect(()=>{
     let newEnemyCards = []
@@ -55,7 +55,6 @@ const Game = () => {
     setInGameEnemyCards(newEnemyCards)
   }, [randomEnemyDigit1, randomEnemyDigit2, randomEnemyDigit3, randomEnemyDigit4])
   let atackButton;
-  let hp = 0;
 
 
 
